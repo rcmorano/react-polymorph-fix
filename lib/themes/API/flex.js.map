@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../source/themes/API/flex.js"],"names":["FLEX_THEME_API","container","item"],"mappings":";;;;;AACO,IAAMA,0CAAiB;AAC5BC,aAAW,EADiB;AAE5BC,QAAM;AAFsB,CAAvB","file":"flex.js","sourcesContent":["// @flow\nexport const FLEX_THEME_API = {\n  container: '',\n  item: ''\n};\n"]}

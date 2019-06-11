@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../source/themes/API/gutter.js"],"names":["GUTTER_THEME_API","gutter"],"mappings":";;;;;AACO,IAAMA,8CAAmB;AAC9BC,UAAQ;AADsB,CAAzB","file":"gutter.js","sourcesContent":["// @flow\nexport const GUTTER_THEME_API = {\n  gutter: ''\n};\n"]}

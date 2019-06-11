@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../source/themes/API/infinitescroll.js"],"names":["INFINITE_SCROLL_THEME_API","root","item"],"mappings":";;;;;AACO,IAAMA,gEAA4B;AACvCC,QAAM,EADiC;AAEvCC,QAAM;AAFiC,CAAlC","file":"infinitescroll.js","sourcesContent":["// @flow\nexport const INFINITE_SCROLL_THEME_API = {\n  root: '',\n  item: ''\n};\n"]}

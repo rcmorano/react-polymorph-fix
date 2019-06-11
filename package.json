@@ -1,0 +1,194 @@
+{
+  "_args": [
+    [
+      "react-polymorph@0.8.0",
+      "/Users/sebastienguillemot/Documents/git/yoroi-frontend"
+    ]
+  ],
+  "_from": "react-polymorph@0.8.0",
+  "_id": "react-polymorph@0.8.0",
+  "_inBundle": false,
+  "_integrity": "sha512-AZuDHowp6XnE/qNETMDu8P7ZrAjI5dlpig5H7wqi3ZTp3gZ1VfbWHOoLCAeQtoPHAoYdAJHFlDRQRMmwyVHDTg==",
+  "_location": "/react-polymorph",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-polymorph@0.8.0",
+    "name": "react-polymorph",
+    "escapedName": "react-polymorph",
+    "rawSpec": "0.8.0",
+    "saveSpec": null,
+    "fetchSpec": "0.8.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-polymorph/-/react-polymorph-0.8.0.tgz",
+  "_spec": "0.8.0",
+  "_where": "/Users/sebastienguillemot/Documents/git/yoroi-frontend",
+  "author": {
+    "name": "Dominik Guzei",
+    "url": "https://github.com/DominikGuzei"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "flow"
+    ],
+    "plugins": [
+      "transform-object-rest-spread",
+      "transform-class-properties",
+      "lodash"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/input-output-hk/react-polymorph/issues"
+  },
+  "contributors": [
+    {
+      "name": "Dominik Guzei",
+      "email": "dominik.guzei@gmail.com",
+      "url": "https://www.linkedin.com/in/dominik-guzei"
+    },
+    {
+      "name": "Nikola Glumac",
+      "email": "niglumac@gmail.com",
+      "url": "https://www.linkedin.com/in/nikolaglumac"
+    },
+    {
+      "name": "Marcus Hurney",
+      "email": "marcushurney@gmail.com",
+      "url": "https://www.linkedin.com/in/marcus-hurney"
+    }
+  ],
+  "dependencies": {
+    "create-react-context": "0.2.2",
+    "create-react-ref": "0.1.0",
+    "filter-react-dom-props": "0.0.2",
+    "postinstall-build": "5.0.1",
+    "react-modal": "3.1.12"
+  },
+  "description": "React components with highly customizable logic, markup and styles.",
+  "devDependencies": {
+    "@dump247/storybook-state": "1.5.0",
+    "@storybook/addon-actions": "3.2.16",
+    "@storybook/react": "3.3.12",
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.2.3",
+    "babel-jest": "23.0.1",
+    "babel-loader": "7.1.2",
+    "babel-plugin-dev-expression": "0.2.1",
+    "babel-plugin-lodash": "3.3.2",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-decorators-legacy": "1.3.4",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-flow": "6.23.0",
+    "babel-preset-react": "6.24.1",
+    "classnames": "2.2.5",
+    "cpx": "1.5.0",
+    "cross-env": "5.2.0",
+    "css-loader": "0.26.1",
+    "enzyme": "3.7.0",
+    "enzyme-adapter-react-16": "1.6.0",
+    "enzyme-to-json": "3.3.4",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-formatter-pretty": "1.3.0",
+    "eslint-plugin-flowtype": "3.0.0",
+    "eslint-plugin-flowtype-errors": "3.3.6",
+    "eslint-plugin-import": "2.11.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-promise": "3.7.0",
+    "eslint-plugin-react": "7.5.1",
+    "extract-text-webpack-plugin": "2.1.2",
+    "file-loader": "1.1.5",
+    "flow-bin": "0.60.1",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "23.1.0",
+    "jest-enzyme": "6.0.2",
+    "lodash": "4.17.10",
+    "node-sass": "4.5.3",
+    "nodemon": "1.12.1",
+    "prettier-eslint": "8.8.1",
+    "react": "16.4.1",
+    "react-dom": "16.4.1",
+    "react-test-renderer": "16.4.1",
+    "rimraf": "2.6.2",
+    "sass-loader": "6.0.6",
+    "style-loader": "0.19.0",
+    "url-loader": "0.6.2",
+    "webpack": "2.6.1"
+  },
+  "homepage": "https://github.com/input-output-hk/react-polymorph#readme",
+  "jest": {
+    "verbose": false,
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__tests__/__mocks__/fileMock.js",
+      "\\.(css|scss|sass)$": "identity-obj-proxy"
+    },
+    "testPathIgnorePatterns": [
+      "<rootDir>/__tests__/__snapshots__",
+      "<rootDir>/__tests__/__mocks__",
+      "<rootDir>/__tests__/helpers"
+    ],
+    "testEnvironment": "jsdom",
+    "setupFiles": [
+      "<rootDir>/jestSetup.js"
+    ]
+  },
+  "keywords": [
+    "react",
+    "components",
+    "composable",
+    "customizable",
+    "extendable",
+    "flexible",
+    "hackable",
+    "render prop",
+    "skins",
+    "themes"
+  ],
+  "license": "Apache-2.0",
+  "name": "react-polymorph",
+  "peerDependencies": {
+    "classnames": ">=2",
+    "lodash": ">=4",
+    "react": ">=15.0.0 || <=16.4.1",
+    "react-dom": ">=15.0.0 || <=16.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/input-output-hk/react-polymorph.git"
+  },
+  "scripts": {
+    "build": "cross-env npm run clean && npm run sass && npm run js",
+    "clean": "rimraf ./lib",
+    "flow:test": "flow; test $? -eq 0 -o $? -eq 2",
+    "js": "babel source -d lib -s",
+    "lint": "eslint --format=node_modules/eslint-formatter-pretty source stories *.js",
+    "postinstall": "postinstall-build lib --only-as-dependency",
+    "prepare": "npm run clean && npm run build",
+    "sass": "cpx \"./source/themes/**/*\" ./lib/themes",
+    "storybook": "start-storybook -p 6543 -c storybook",
+    "test": "cross-env NODE_ENV=test jest",
+    "test:clean": "cross-env NODE_ENV=test jest -u",
+    "test:watch": "cross-env NODE_ENV=test jest --watchAll",
+    "watch": "nodemon npm run js && npm run sass"
+  },
+  "version": "0.8.0"
+}

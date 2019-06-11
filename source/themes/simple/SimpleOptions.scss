@@ -1,0 +1,158 @@
+@import "theme";
+@import "mixins/arrow";
+
+// OVERRIDABLE CONFIGURATION VARIABLES
+
+// options
+$options-border: var(--rp-options-border, 1px solid #c6cdd6) !default;
+$options-border-color: var(--rp-options-border-color, #c6cdd6) !default;
+$options-border-radius: var(--rp-options-border-radius, 2px) !default;
+$options-font-family: var(--rp-options-font-family, $theme-font-regular, sans-serif) !default;
+$options-font-size: var(--rp-options-font-size, 16px) !default;
+$options-shadow: var(--rp-options-shadow, none) !default;
+
+// option
+$option-bg-color: var(--rp-option-bg-color, #fafbfc) !default;
+$option-bg-color-highlighted: var(--rp-option-bg-color-highlighted, #edf0f3) !default;
+$option-border-color: var(--rp-option-border-color, #c6cdd6) !default;
+$option-cursor: var(--rp-option-cursor, pointer) !default;
+$option-cursor-disabled: var(--rp-option-cursor-disabled, default) !default;
+$option-line-height: var(--rp-option-line-height, normal) !default;
+$option-padding: var(--rp-option-padding, 14px 20px) !default;
+$option-text-color: var(--rp-option-text-color, #5e6066) !default;
+$option-text-color-disabled: var(--rp-option-text-color-disabled, rgba(#5e6066, 0.5)) !default;
+
+// checkmark
+$option-checkmark-color: var(--rp-option-checkmark-color, #5e6066) !default;
+$option-checkmark-height: var(--rp-option-checkmark-height, 9px) !default;
+$option-checkmark-margin: var(--rp-option-checkmark-margin, 0 2px 3px auto) !default;
+$option-checkmark-thickness: var(--rp-option-checkmark-thickness, 2px) !default;
+$option-checkmark-width: var(--rp-option-checkmark-width, 5px) !default;
+
+// arrow
+$options-arrow: var(--rp-options-arrow, true) !default;
+$options-arrow-size: var(--rp-options-arrow-size, 10px) !default;
+$options-arrow-width: var(--rp-options-arrow-width, calc(2*#{$options-arrow-size})) !default;
+$options-arrow-height: var(--rp-options-arrow-height, $options-arrow-size) !default;
+
+
+.options {
+  & > div {
+    padding: 0;
+  }
+
+  @if calc(#{$options-arrow} == true) {
+    [data-bubble-arrow] {
+      @include arrow(
+        up,
+        $option-bg-color,
+        $options-border-color,
+        $options-arrow-width,
+        $options-arrow-height,
+      );
+    }
+
+    &.firstOptionHighlighted {
+      &:not(.openUpward) [data-bubble-arrow] {
+        @include arrow(
+          up,
+          $option-bg-color-highlighted !important,
+          $options-border-color,
+          $options-arrow-width,
+          $options-arrow-height,
+        );
+      }
+      &.openUpward [data-bubble-arrow] {
+        height: inherit;
+        @include arrow(
+          down,
+          $option-bg-color-highlighted !important,
+          $options-border-color,
+          $options-arrow-width,
+          $options-arrow-height,
+        );
+      }
+    }
+  } @else {
+    [data-bubble-arrow] {
+      display: none !important;
+    }
+  }
+}
+
+.ul {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  font-family: $options-font-family;
+  font-size: $options-font-size;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.option {
+  background-color: $option-bg-color;
+  color: $option-text-color;
+  cursor: $option-cursor;
+  line-height: $option-line-height;
+  padding: $option-padding;
+
+  &.selectedOption {
+    display: flex;
+    .label {
+      flex-grow: 1;
+    }
+    &:after {
+      align-self: center;
+      border-color: $option-checkmark-color;
+      border-style: solid;
+      border-width: 0 $option-checkmark-thickness $option-checkmark-thickness 0;
+      content: '';
+      height: $option-checkmark-height;
+      margin: $option-checkmark-margin;
+      transform: rotate(45deg);
+      width: $option-checkmark-width;
+    }
+  }
+
+  &.highlightedOption {
+    background-color: $option-bg-color-highlighted;
+  }
+
+  &.disabledOption {
+    color: $option-text-color-disabled;
+    cursor: $option-cursor-disabled;
+  }
+}
+
+// BEGIN SPECIAL STATES ---------- //
+
+@if calc(#{$options-arrow} == true) {
+  .openUpward {
+    &.options {
+      top: inherit;
+
+      [data-bubble-arrow] {
+        @include arrow(
+          down,
+          $option-bg-color,
+          $options-border-color,
+          $options-arrow-width,
+          $options-arrow-height,
+        );
+      }
+
+      &.firstOptionHighlighted [data-bubble-arrow] {
+        @include arrow(
+          down,
+          $option-bg-color-highlighted,
+          $options-border-color,
+          $options-arrow-width,
+          $options-arrow-height,
+        );
+      }
+    }
+  }
+}
+
+// END SPECIAL STATES ---------- //

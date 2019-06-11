@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../source/themes/API/loadingspinner.js"],"names":["LOADING_SPINNER_API","root","small","big"],"mappings":";;;;;AACO,IAAMA,oDAAsB;AACjCC,QAAM,EAD2B;AAEjCC,SAAO,EAF0B;AAGjCC,OAAK;AAH4B,CAA5B","file":"loadingspinner.js","sourcesContent":["// @flow\nexport const LOADING_SPINNER_API = {\n  root: '',\n  small: '',\n  big: ''\n};\n"]}
